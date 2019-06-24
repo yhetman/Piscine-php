@@ -1,100 +1,22 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
         <title>Mendeleïev periodic table</title>
-        <style>
-        table
-        {
-            text-align: center;
-            vertical-align: middle;
-            margin-left: 128px;
-            margin-right: 128px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        td
-        {
-            font-weight: bold;
-            font-size: 25px;
-            min-width: 60px;
-            page-break-inside: avoid;
-        }
-        th
-        {
-            background-color: whitesmoke;
-            min-width: 70px;
-        }
-        .actinide
-        {
-            background-color: #ef99cc;
-        }
-        .alkali
-        {
-            background-color: lightsalmon;
-        }
-        .chalcogen
-        {
-            background-color: lightgreen;
-        }
-        .earthmetal 
-        {
-            background-color: lightseagreen;
-        }
-        .halogens
-        {
-            background-color: khaki;
-        }
-        .inertgase
-        {
-            background-color: #c0ffff;
-        }
-        .lanthanide
-        {
-            background-color: #FFBFFF;
-        }
-        .metalloid
-        {
-            background-color: #cccc99;
-        }
-        .posttransition
-        {
-            background-color: lightsteelblue;
-        }
-        .radioact
-        {
-            background-color: #33cc66;
-        }
-        .transition
-        {
-            background-color: lightblue;
-        }
-        .molarmass
-        {
-            margin: 2px 2px 5px 2px;
-            font-size: 12px;
-            text-align: right;
-            font-weight: normal;
-        }
-        .number
-        {
-            font-size: 12px;
-            margin: 5px 2px 2px 2px;
-            text-align: left;
-            font-weight: normal;
-        }
-        </style>
+        <link href="responsive.css" rel="stylesheet">
     </head>
 
     <body>
         <table contenteditable="true">
             <tr>
                 <td colspan="19">
-                <p style="font-size: 30px; text-align: center; font-family: Arial">
+                <p style="font-size: 3vw; text-align: center; font-family: 'Times New Roman' ">
                 <h1><b>Mendeleïev periodic table</b></p></td></h1>
             </tr>
             <tr>
-                <td><p class="molarmass" style="text-align: center;"><b>Groups →</b><br></p>
-                    <p class="molarmass" style="text-align: center;"><b>↓ Periods</b></p></td>
+                <td><p class="resize" style="text-align: center;"><b>Groups →</b><br></p>
+                    <p class="resize" style="text-align: left;"><b>↓ Periods</b></p></td>
                 <th>1</th>
                 <th>2</th>
                 <th>3</th>
@@ -120,8 +42,8 @@
                 <td class="chalcogen"><p class="molarmass">1.008</p>H<p class="number">1</p></td>
                 <td colspan="4"></td>
                 <td colspan="4" rowspan="3">
-                    <img src="https://www.film.ru/sites/default/files/filefield_paths/img_0.jpg" height="200"
-                    alt = "Mendeleev" title="Mendeleev"></td>
+                    <img src="https://www.film.ru/sites/default/files/filefield_paths/img_0.jpg"
+                    height="200" alt = "Mendeleev" title="Mendeleev"></td>
                 <td colspan="8"></td>
                 <td class="inertgase"><p class="molarmass">4.003</p>He<p class="number">2</p></td>
             </tr>
@@ -254,7 +176,7 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="background-color: #d8ffee">Lanthanides *</td>
+                <td colspan="4" style="background-color: paleturquoise">Lanthanides *</td>
                 <td class="lanthanide"><p class="molarmass">138.91</p>La<p class="number">57</p></td>
                 <td class="lanthanide"><p class="molarmass">140.12</p>Ce<p class="number">58</p></td>
                 <td class="lanthanide"><p class="molarmass">140.91</p>Pr<p class="number">59</p></td>
@@ -273,7 +195,7 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="background-color: #d8ffee">Actinides **</td>
+                <td colspan="4" style="background-color: paleturquoise">Actinides **</td>
                 <td class="actinide"><p class="molarmass">[227.03]</p>Ac<p class="number">89</p></td>
                 <td class="actinide"><p class="molarmass">232.04</p>Th<p class="number">90</p></td>
                 <td class="actinide"><p class="molarmass">231.04</p>Pa<p class="number">91</p></td>
@@ -292,7 +214,7 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="background-color: #d8ffee">Superactinides ***</td>
+                <td colspan="4" style="background-color: paleturquoise">Superactinides ***</td>
                 <td class="radioact"><p class="molarmass">[320]</p>Ubu<p class="number">121</p></td>
                 <td class="radioact"><p class="molarmass">[320]</p>Ubb<p class="number">122</p></td>
                 <td class="radioact"><p class="molarmass">[325]</p>Ubt<p class="number">123</p></td>
@@ -313,50 +235,50 @@
 
             <tr>
                 <td colspan="4"></td>
-                <td class="chalcogen" colspan="5" style="font-size: 17px;">Chalcogens</td>
+                <td class="chalcogen" colspan="5" style="font-size: 1.3vw;">Chalcogens</td>
                 <td></td>
-                <td class="inertgase" colspan="5" style="font-size: 17px;">Inert gases</td>
+                <td class="inertgase" colspan="5" style="font-size: 1.3vw;">Inert gases</td>
                 <td colspan="4"></td>
             </tr>
 
             <tr>
                 <td colspan="4"></td>
-                <td class="alkali" colspan="5" style="font-size: 17px;">Alkali metal</td>
+                <td class="alkali" colspan="5" style="font-size: 1.3vw;">Alkali metal</td>
                 <td></td>
                 <td class="earthmetal" colspan="5"
-                    style="font-size: 17px;">Alkali earth metals</td>
+                    style="font-size: 1.3vw;">Alkali earth metals</td>
                 <td colspan="4"></td>
             </tr>
 
             <tr>
                 <td colspan="4"></td>
-                <td class="metalloid" colspan="5" style="font-size: 17px;">Metalloids</td>
+                <td class="metalloid" colspan="5" style="font-size: 1.3vw;">Metalloids</td>
                 <td></td>
                 <td class="posttransition" colspan="5"
-                    style="font-size: 17px;">Post-transition metals</td>
+                    style="font-size: 1.3vw;">Post-transition metals</td>
                 <td colspan="4"></td>
             </tr>
 
             <tr>
                 <td colspan="4"></td>
-                <td class="halogens" colspan="5" style="font-size: 17px;">Halogens</td>
+                <td class="halogens" colspan="5" style="font-size: 1.3vw;">Halogens</td>
                 <td></td>
                 <td class="transition" colspan="5"
-                    style="font-size: 17px;">Transition metals</td>
+                    style="font-size: 1.3vw;">Transition metals</td>
                 <td colspan="4"></td>
             </tr>
 
             <tr>
                 <td colspan="4"></td>
-                <td class="lanthanide" colspan="5" style="font-size: 17px;">Lanthanides</td>
+                <td class="lanthanide" colspan="5" style="font-size: 1.3vw;">Lanthanides</td>
                 <td></td>
-                <td class="actinide" colspan="5" style="font-size: 17px;">Actinides</td>
+                <td class="actinide" colspan="5" style="font-size: 1.3vw;">Actinides</td>
                 <td colspan="4"></td>
             </tr>
 
             <tr>
                 <td colspan="4"></td>
-                <td class="radioact" colspan="11" style="font-size: 17px;">
+                <td class="radioact" colspan="11" style="font-size: 1.3vw;">
                     Superactinides <i>(expected elements with uncertain properties)</i></td>
                 <td colspan="4"></td>
             </tr>

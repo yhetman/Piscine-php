@@ -1,0 +1,85 @@
+body
+{
+    color: black;
+    background-color: antiquewhite;
+}
+
+.menu
+{
+    margin: auto;
+    width: 70%;
+    display: block;
+}
+
+.list
+{
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 20vw;
+    white-space: nowrap;
+}
+
+.list li
+{
+    float: left;
+    white-space: nowrap;
+    min-width: 20vw;
+}
+
+.list li a
+{
+    padding: 5vw;
+	display: block;
+    color: black;
+    background-color: bisque;
+	text-decoration-style: none;
+    font-size: 2vw;
+    font-family: Arial;
+    white-space: nowrap;
+}
+
+.list ul
+{
+    position: absolute;
+	left: -999999px;
+    top: -999999px;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.list li:hover
+{
+    background: burlywood;
+    position: relative;
+    white-space: nowrap;
+}
+
+.list li:hover ul
+{
+    left: 0vw;
+	top: 1.5vw;
+	background: burlywood;
+    padding: 0vw;
+    white-space: nowrap;
+}
+
+.list li:hover ul li a
+{
+    padding: 5vw;
+    display: block;
+    width: 20vw;
+    text-align: center;
+	text-decoration: none;
+    font-size: 2vw;
+    font-family: Arial;
+    background: burlywood;
+    white-space: nowrap;
+}
+
+.list li:hover ul li a:hover
+{
+    background: peru;
+    white-space: nowrap;
+}
