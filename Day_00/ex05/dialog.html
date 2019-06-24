@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SCUMM</title>
+        <link href="scumm.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+                <img id="greating" src="resources/day_of_the_42.png"
+                alt="Welcome!" title="Welcome!">
+                <img id="loupe" src="resources/loupe.png"
+                alt="Search" title="Search">
+                <a href="scumm.html">
+                  <img class="gifs" src="resources/reload.png"
+                  alt="Start from the beginning" title="Start from the beginning">
+                </a>
+                <a href="http://www.relaischateaux.com">
+                  <img class="gifs" src="resources/close.gif"
+                  style="margin-top: 80px;"
+                  alt="Disconnect" title="I'm fed up of this!">
+                </a>
+              </div>
+              <br>
+          
+              <div class="borders">
+                <div class="left">
+                  <div title="Advance"><img src="resources/arrow.png"
+                      alt="Advance" class="chat-icon"></div>
+                  <div title="Take"><img src="resources/main.png"
+                      alt="Take" class="chat-icon"></div>
+                  <div title="Look"><img src="resources/oeil.png"
+                      alt="Look" class="chat-icon"></div>
+                  <div title="Use"><img src="resources/outil.png"
+                      alt="Use" class="chat-icon"></div>
+                  <div title="Speak"><img src="resources/chat-icon.png"
+                      alt="Speak" class="chat-icon"></div>
+                  <a href="dialog.html">
+                </div>
+            
+                <div class="middle">
+                  <img id="cluster" src="resources/dialog.gif"
+                  alt="Day of the 42" title="Let's start the conversation!">
+                </div>
+            
+                <div class="right">
+                  <img id="book" src="resources/book.png" class="book">
+                  <img id="Towel" src="resources/towel.png" class="towel">
+                  <div title="Wall" class="wall"></div>
+                </div>
+
+                <div class="form" style="height:100px">
+              <div style="margin: 10px;">
+                <p id="chat_1">There is only One Rule:
+                    I ask and you answer!
+                </p>
+              </div>
+              <div>
+              <form id="field">
+                <input type="text" id="a">
+                <div id="submit" onclick="myFunction()"><p id="v">Send</p>
+                </div>
+              </form>
+              </div>
+              </div>
+            </div>
+            <script>
+            var x = 0;
+            function myFunction() {
+              x = x + 1;
+              if (x == 1)
+              {
+                document.getElementById("chat_1").innerHTML =
+                "Seems we are in!<br>Now type something nice for me and start the game!";
+                document.getElementById("field").reset();
+              }
+              if (x == 2)
+              {
+                document.getElementById("chat_1").innerHTML =
+                "Obviosly!<br>Now let's play!";
+                document.getElementById("field").reset();
+                document.getElementById("a").style.display = 'none';
+                document.getElementById("submit").style=
+                "padding-left:100px; padding-right:100px; margin-left:100px;";
+                document.getElementById("v").innerHTML="Let me have fun!!!!!";
+              }
+              if (x == 3)
+              {
+                window.location.href = 'beggining.html';
+              }
+            };
+            </script>
+    </body>
+</html>
