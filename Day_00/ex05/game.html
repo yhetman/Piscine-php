@@ -1,0 +1,161 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SCUMM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scumm.css" />
+</head>
+<body>
+    <div class="header">
+        <img id="greating" src="resources/day_of_the_42.png"
+        alt="Welcome!" title="Welcome!">
+        <img id="loupe" src="resources/loupe.png"
+        alt="Search" title="Search">
+        <a href="scumm.html">
+          <img class="gifs" src="resources/reload.png"
+          alt="Start from the beginning" title="Start from the beginning">
+        </a>
+        <a href="http://www.relaischateaux.com">
+          <img class="gifs" src="resources/close.gif"
+          style="margin-top: 80px;"
+          alt="Disconnect" title="I'm fed up of this!">
+        </a>
+    </div>
+      <br>
+  
+      <div class="frame">
+        <div class="left">
+        <a href="game.html">
+          <div title="Advance"><img src="resources/arrow.png"
+              alt="Advance" class="chat-icon"></div>
+        </a>
+          <div title="Take"><img src="resources/main.png"
+              alt="Take" class="click-icon"
+              onclick="myFunction(6)"></div>
+          <div title="Look"><img src="resources/oeil.png"
+              alt="Look" class="chat-icon"></div>
+          <div title="Use"><img src="resources/outil.png"
+              alt="Use" class="chat-icon"></div>
+          <div title="Speak"><img src="resources/chat-icon.png"
+              alt="Speak" class="chat-icon"></div>
+          <a href="dialog.html"></a>
+        </div>
+    
+        <div class="middle">
+          <img id="cluster" src="resources/room.jpg"
+          alt="FIND!" usemap="#roommap">
+          <map name="roommap">
+            <area id="area_1" onclick="myFunction(1)" shape="poly"
+            coords="37,0,70,110,0,125,0,0">
+            <area id="area_2" onclick="myFunction(2)" shape="poly"
+            coords="860,175,834,195,837,235,877,235,885,213,882,190,860,175">
+            <area id="area_3" onclick="myFunction(3)" shape="poly"
+            coords="420,490,390,530,417,547,474,514,473,493,436,480">
+            <area id="area_4" onclick="myFunction(4)" shape="poly"
+            coords="666,0,666,60,721,60,721,0">
+            <area id="area_5" onclick="myFunction(5)" shape="poly"
+            coords="318,276,371,340,403,341,419,312,401,305,391,309,341,262">
+          </map>
+        </div>
+    
+        <div class="right">
+            <img id="book" src="resources/book.png" class="book">
+            <img id="Towel" src="resources/towel.png" class="towel">
+            <div title="Wall" class="wall"></div>
+        </div>
+        <div class="rules">
+            <div style="margin: 10px; height: 200px;">
+            <p> Use your hands to find and grab<br>5 items hidden inside the room.<br></p>
+            </div>
+        </div>
+        <div class="container">
+            <div style="margin-top:10px;">
+              <img class="item" id="i1" src="resources/w_bowie.png" alt="bowie">
+              <img class="item" id="i2" src="resources/w_clock.png" alt="clock">
+              <img class="item" id="i3" src="resources/w_toy.png" alt="toy">
+              <img class="item" id="i4" src="resources/w_phone.png" alt="phone">
+              <img class="item" id="i5" src="resources/w_bottle.png" alt="bottle">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>My congrats, dude!<br></p>
+      </div>
+    </div>
+    <script>
+    var items = 0;
+    var one = 0;
+    var two = 0;
+    var three = 0;
+    var four = 0;
+    var five = 0;
+    var hand = 0;
+    function myFunction(x) {
+      if (x == 6)
+      {
+        hand = 1;
+        x = 0;
+      }
+      if (hand == 1 && x == 1 && one == 0)
+      {
+        hand = 0;
+        x = 0;
+        one = 1;
+        document.getElementById("i1").src = "resources/bowie.png";
+        items = items + 1;
+      }
+      if (hand == 1 && x == 2 && two == 0)
+      {
+        hand = 0;
+        x = 0;
+        two = 1;
+        document.getElementById("i2").src = "resources/clock.png";
+        items = items + 1;
+      }
+      if (hand == 1 && x == 3 && three == 0)
+      {
+        hand = 0;
+        x = 0;
+        three = 1;
+        document.getElementById("i3").src = "resources/toy.png";
+        items = items + 1;
+      }
+      if (hand == 1 && x == 4 && four == 0)
+      {
+        hand = 0;
+        x = 0;
+        four = 1;
+        document.getElementById("i4").src = "resources/phone.png";
+        items = items + 1;
+      }
+      if (hand == 1 && x == 5 && five == 0)
+      {
+        hand = 0;
+        x = 0;
+        five = 1;
+        document.getElementById("i5").src = "resources/bottle.png";
+        items = items + 1;
+      }
+      if (one == 1 && two == 1 && three == 1 && four == 1 && five == 1)
+      {
+        var span = document.getElementsByClassName("close")[0];
+        var modal = document.getElementById('myModal');
+        modal.style.display = "block";
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      }
+    };
+    </script>
+</body>
+</html>>
