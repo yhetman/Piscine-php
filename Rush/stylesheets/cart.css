@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    padding-top: 60px;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    background: darkseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header span {
+    font-size: 26px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid #4CAF50;
+    padding: 5px 15px;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+}
+
+.product_description {
+    width: 100%;
+    height: 100px;
+}
+
+.product_title {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.product_category {
+    color: dimgrey;
+    font-size: 26px;
+    margin: 0px;
+}
+
+.product_cost {
+    width: 100%;
+    text-align: right;
+    color: orange;
+}
+
+.total_title {
+    text-align: right;
+    font-size: 28px;
+}
+
+.total_cost {
+    text-align: right;
+    font-size: 28px;
+    color: orange;
+}
+
+.quantity {
+    margin: 0;
+    color: dimgrey;
+    text-align: center;
+}
+
+.btn_buy {
+    float: right;
+    width: 30%;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn_reset {
+    float: left;
+    width: 30%;
+    background: orange;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.empty {
+    color: dimgrey;
+    text-align: center;
+}
+
+#ordered_items {
+    width: 80%;
+    margin: 20px auto;
+}

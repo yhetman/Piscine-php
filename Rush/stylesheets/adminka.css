@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.btn_add {
+    background: black;
+    color: white;
+    height: 50px;
+    width: 200px;
+}
