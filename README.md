@@ -1,4 +1,5 @@
-# Web_Pool
+# Piscine php
+##### Actually there's used not only php, but some more tools
 
 Intensive course of web-programming which contains both Front and Back Development.
 
